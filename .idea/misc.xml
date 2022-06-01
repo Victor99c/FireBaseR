@@ -4,9 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/vicho/AndroidStudioProjects/FireBaseR/app/src/main/res/drawable/ic_baseline_local_movies_24.xml" value="0.1" />
+        <entry key="..\:/Users/vicho/AndroidStudioProjects/FireBaseR/app/src/main/res/drawable/movie_item.xml" value="0.1945" />
         <entry key="..\:/Users/vicho/AndroidStudioProjects/FireBaseR/app/src/main/res/drawable/portada.xml" value="0.1" />
         <entry key="..\:/Users/vicho/AndroidStudioProjects/FireBaseR/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/vicho/AndroidStudioProjects/FireBaseR/app/src/main/res/layout/item_movie.xml" value="0.5" />
+        <entry key="..\:/Users/vicho/AndroidStudioProjects/FireBaseR/app/src/main/res/layout/item_movie.xml" value="0.1" />
       </map>
     </option>
   </component>
