@@ -15,10 +15,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val database = Firebase.database
-        val dataRef = database.reference
+        val dbase = Firebase.database
+        val dRef = dbase.reference
         binding.BtnInsertar.setOnClickListener{
-            dataRef.child("Peliculas").child(binding.ID.text.toString()).setValue(
+            dRef.child("Pelicula").child(binding.ID.text.toString()).setValue(
                 Peliculas(
                     binding.EnTitulo.text.toString(),
                     binding.EnAo.text.toString(),
@@ -29,9 +29,9 @@ class MainActivity : AppCompatActivity() {
                     binding.EnGenero.text.toString()
                 )
             )
-            dataRef.child("Peliculas").get().addOnSuccessListener {respuesta ->
-                Log.d("respuesta", respuesta.value.toString())
+            dRef.child("Peliculas").get().addOnSuccessListener {respuesta ->
                 val lista = JSONArray(respuesta.value.toString())
+                Log.d("respuesta", respuesta.toString())
                 binding.RPelicula.adapter = MainAdapter(lista)
             }
         }

@@ -8,30 +8,30 @@
         android:id="@+id/ivMovie"
         android:layout_width="160dp"
         android:layout_height="220dp"
-        android:background="@color/white"
+        android:background="#00FFFFFF"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/tvMovieTitle"
         app:layout_constraintTop_toTopOf="parent"
         />
+
     <TextView
         android:id="@+id/tvMovieTitle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Movie NAME"
-        android:textSize="23dp"
-        android:textColor="@color/black"
-        app:layout_constraintTop_toTopOf="@id/ivMovie"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/ivMovie"
+        android:layout_width="211dp"
+        android:layout_height="51dp"
         android:layout_margin="11dp"
-        />
+        android:text="Titulo"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        app:layout_constraintLeft_toRightOf="@id/ivMovie"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivMovie" />
 
     <TextView
         android:id="@+id/tvMovieYear"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="11dp"
-        android:text="2019"
+        android:text="Año"
         android:textColor="@color/black"
         android:textSize="18dp"
         app:layout_constraintBottom_toTopOf="@id/tvMovieCountry"
@@ -44,7 +44,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="11dp"
-        android:text="US"
+        android:text="Pais"
         android:textColor="@color/black"
         app:layout_constraintLeft_toRightOf="@id/ivMovie"
         android:textSize="18dp"
@@ -55,13 +55,12 @@
         android:id="@+id/tvMovieGenre"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Action"
+        android:text="Genero"
         android:textSize="18sp"
         android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/tvMovieTitle"
         app:layout_constraintRight_toLeftOf="@id/tvMovieYear"
         app:layout_constraintLeft_toRightOf="@id/ivMovie"
-
         android:layout_margin="11dp"
         />
 
