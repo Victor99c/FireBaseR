@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                     binding.EnGenero.text.toString()
                 )
             )
-            dRef.child("Peliculas").get().addOnSuccessListener {respuesta ->
+            dRef.child("Pelicula").get().addOnSuccessListener {respuesta ->
                 val lista = JSONArray(respuesta.value.toString())
                 Log.d("respuesta", respuesta.toString())
                 binding.RPelicula.adapter = MainAdapter(lista)
